@@ -1,4 +1,4 @@
-Data and analysis scripts from Smith et al., 2020: "Inverse regulation of innate and CRISPR-Cas adaptive immunity selectively discriminates plasmids and phages in response to stress"
+Data and analysis scripts from Smith et al., 2020: "Inverse regulation of innate and CRISPR-Cas adaptive immunity selectively discriminates plasmids and phages in response to stress."
 
 Leah M. Smith, Simon A. Jackson, Lucia M. Malone, James E. Ussher, Paul P. Gardner and Peter C. Fineran*
 
