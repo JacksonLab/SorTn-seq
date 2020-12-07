@@ -103,6 +103,16 @@ An example dataset for SorTn-seq on the type III-A CRISPR-Cas *csm* promoter in 
 - **R**\
 *Version 4.0.3 or higher https://www.r-project.org/*
 
+### R packages:
+- tidyverse
+- readxl
+- writexl
+- edgeR
+- scales
+- ggrepel
+- ggiraph
+
+
 
 
 
