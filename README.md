@@ -50,7 +50,7 @@ done
 
 ```
 
-**SorTnSeq_format_features.R: Generates a list of genome features and add intergenic regions.**\
+### SorTnSeq_format_features.R: Generates a list of genome features and add intergenic regions.
 \
 Requires:
 - The RefSeq .gff file corresponding to the genome assembly used above: [genome.prefix]_genomic.gff
@@ -58,7 +58,7 @@ Requires:
 Outputs: 
 - [genome.prefix]_features_sortnseq.xlsx
 
-**SorTnSeq_insertion_counts.R: Matches Tn insertion sites to genome features and generates a counts table for later analyses.**\
+### SorTnSeq_insertion_counts.R: Matches Tn insertion sites to genome features and generates a counts table for later analyses.
 \
 Requires:
 - [genome.prefix]_features_sortnseq.xlsx
@@ -72,7 +72,7 @@ Outputs:
 - SorTnSeq_table_unique_insertions.xlsx: summarizes the number of unique transposon insertions per feature for each library.
 - SorTnSeq_all_features_by_sample.xlsx: summarizes the number of reads, unique insertions, and insertions index per feature for each library.
 
-**SorTnSeq_analysis.R: Regulator prediction.**\
+### SorTnSeq_analysis.R: Regulator prediction.
 \
 Requires:
 - [genome.prefix]_features_sortnseq.xlsx
