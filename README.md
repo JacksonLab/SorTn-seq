@@ -89,11 +89,11 @@ Outputs:
 ## Dependencies:
 
 - **FastQC**\
-*reference*
+*https://www.bioinformatics.babraham.ac.uk/projects/fastqc/*
 - **Trimmomatic**\
-*reference*
+*http://www.usadellab.org/cms/?page=trimmomatic*
 - **Bio-TraDIS**\
-*reference*
+*https://sanger-pathogens.github.io/Bio-Tradis/*
 - **R**\
 *Version 4.0.3 or higher https://www.r-project.org/*
 
