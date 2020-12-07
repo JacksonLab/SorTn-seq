@@ -12,12 +12,13 @@ Leah M. Smith, Simon A. Jackson, Paul P. Gardner and Peter C. Fineran*
 
 SorTn-seq uses fluorescent reporters, saturation transposon mutagenesis and fluorescence activated cell sorting (FACS) to isolate bacterial mutants with altered gene expression. Sorted cell pools are deep sequenced to identify transposon insertion sites and the enrichment of mutants in high or low fluorescence bins is used to identify putative regulators of gene expression.
 
-*This repository contains:*
+**This repository contains:**
 
-The data analysis scripts from Smith et al., 2020, Nature Microbiology: SorTn-seq/Nature_Microbiology/
+1) The data analysis scripts from Smith et al., 2020, Nature Microbiology: SorTn-seq/Nature_Microbiology/
 
+2) Data analysis scripts and an example dataset from the subsequent Protcol paper: Smith et al., unpublished.
 
-### Data analysis overview
+### SorTn-seq data analysis overview
 
 
 
@@ -30,6 +31,23 @@ Figure 9. Summary of input and output files of the SorTn-seq analysis. FASTQ fil
 # Quality control of raw sequencing data
 fastqc -t 32 *.fastq.gz
 ```
+
+## Dependencies:
+
+- **FastQC**
+  *reference*
+- **Trimmomatic**
+  *reference*
+- **Bio-TraDIS** 
+- **R**  
+  *Version 4.0.3 or higher https://www.r-project.org/*
+
+
+
+
+
+
+
 
 
 
