@@ -96,6 +96,8 @@ An example dataset for SorTn-seq on the type III-A CRISPR-Cas *csm* promoter in 
 *https://www.bioinformatics.babraham.ac.uk/projects/fastqc/*
 - **Trimmomatic**\
 *http://www.usadellab.org/cms/?page=trimmomatic*
+- **BEDTools**
+*https://github.com/arq5x/bedtools2*
 - **Bio-TraDIS**\
 *https://sanger-pathogens.github.io/Bio-Tradis/*
 - **R**\
