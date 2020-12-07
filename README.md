@@ -63,7 +63,7 @@ Outputs:
 Requires:
 - [genome.prefix]_features_sortnseq.xlsx
 - sample_metadata.xlsx
-- The .bed files generate above, placed in bed/
+- The .bed files generate above, placed in bam/
 - Update the [genome.prefix], [trim.3.prime] and [trim.5.prime] variables
 
 Outputs:
