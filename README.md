@@ -27,10 +27,32 @@ Figure 9. Summary of input and output files of the SorTn-seq analysis. FASTQ fil
 
 ## Data analysis
 
+**Process raw data:**
+Requires the RefSeq nucleotide fasta file ([genome.prefix]_genomic.fna)
+
 ```bash
 # Quality control of raw sequencing data
 fastqc -t 32 *.fastq.gz
+
+# Optional read trimming
+trimmomatic SE -threads 20 -trimlog trim_summary [input].fastq.gz [output].fastq.gz ILLUMINACLIP:TruSeq3-SE:2:30:1
+
+# Bio-TraDIS
+find *.fastq.gz -printf '%f\n' > filelist.txt
+bacteria_tradis --smalt --smalt_k 10 --smalt_s 1 --smalt_y 0.92 --smalt_r -1 -mm 2 -v -f filelist.txt -T TATAAGAGACAG -r [genome.prefix]_genomic.fna
+
+# Convert .bam files to .bed format
+for FILE in *.bam; do
+bedtools bamtobed -i $FILE > $FILE.bed
+done
+
 ```
+
+**Generate a list of genome features and add intergenic regions.**
+Requires the RefSeq .gff file () corresponding to the genome assembly used above.
+
+
+
 
 ## Dependencies:
 
