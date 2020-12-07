@@ -88,8 +88,8 @@ Outputs:
 
 ## Example dataset
 
-example_dataset/ contains an example dataset for SorTn-seq on the type III-A CRISPR-Cas *csm* promoter in *Serratia* ATCC 39006.
-The [genome.prefix] should be set to "GCF_002847015.1_ASM284701v1".
+An example dataset for SorTn-seq on the type III-A CRISPR-Cas *csm* promoter in *Serratia* ATCC 39006 is provided in example_dataset/.\
+The [genome.prefix] should be set to "GCF_002847015.1_ASM284701v1".\
 The .bed files need to be unzipped before running SorTnSeq_insertion_counts.R.
 
 ## Dependencies:
