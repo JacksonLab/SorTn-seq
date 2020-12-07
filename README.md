@@ -35,12 +35,13 @@ fastqc -t 32 *.fastq.gz
 ## Dependencies:
 
 - **FastQC**
-  *reference*
+   *reference*
 - **Trimmomatic**
-  *reference*
-- **Bio-TraDIS** 
+   *reference*
+- **Bio-TraDIS**
+   *reference*
 - **R**  
-  *Version 4.0.3 or higher https://www.r-project.org/*
+   *Version 4.0.3 or higher https://www.r-project.org/*
 
 
 
