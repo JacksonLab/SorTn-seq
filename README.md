@@ -51,36 +51,34 @@ done
 ```
 
 ### SorTnSeq_format_features.R: Generates a list of genome features and add intergenic regions.
-\
-Requires:
+**Requires:**
 - The RefSeq .gff file corresponding to the genome assembly used above: [genome.prefix]_genomic.gff
 - Update the "genome.prefix" variable
-Outputs: 
+
+**Outputs:** 
 - [genome.prefix]_features_sortnseq.xlsx
 
 ### SorTnSeq_insertion_counts.R: Matches Tn insertion sites to genome features and generates a counts table for later analyses.
-\
-Requires:
+**Requires:**
 - [genome.prefix]_features_sortnseq.xlsx
 - sample_metadata.xlsx
 - The .bed files generate above, placed in bam/
 - Update the [genome.prefix], [trim.3.prime] and [trim.5.prime] variables
 
-Outputs:
+**Outputs:**
 - SorTnSeq_table_reads.xlsx: summarizes the number of reads per feature for each library.
 - SorTnSeq_table_insertion_index.xlsx: summarizes the insertion index (number of insertions / feature length) per feature for each library.
 - SorTnSeq_table_unique_insertions.xlsx: summarizes the number of unique transposon insertions per feature for each library.
 - SorTnSeq_all_features_by_sample.xlsx: summarizes the number of reads, unique insertions, and insertions index per feature for each library.
 
 ### SorTnSeq_analysis.R: Regulator prediction.
-\
-Requires:
+**Requires:**
 - [genome.prefix]_features_sortnseq.xlsx
 - SorTnSeq_table_unique_insertions.xlsx
 - SorTnSeq_table_insertion_index.xlsx
 - Update the [bcv.features], [read.cutoff.depleted], [reference.sample], [threshold.fc] and [threshold.p.adj] variables
 
-Outputs:
+**Outputs:**
 - SorTnSeq_bcv_plot.pdf: multidimensional scaling plot (MDS) to visualize the similarity between libraries and replicates based upon the biological coefficient of variation 
 - SorTnSeq_enrichment_depleted.pdf: summarizes the enriched features in the high and low bins, at the specified cut-offs values. In R, this plot is interactive, and hovering above each point displays the feature name.
 - Volcano plots for each sample library compared to the reference
@@ -111,14 +109,3 @@ An example dataset for SorTn-seq on the type III-A CRISPR-Cas *csm* promoter in 
 - scales
 - ggrepel
 - ggiraph
-
-
-
-
-
-
-
-
-
-
-
