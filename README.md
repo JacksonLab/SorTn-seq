@@ -2,22 +2,19 @@
 
 ## Citation
 
-Data analysis scripts from Smith et al., 2020: "The Rcs stress response inversely controls surface and CRISPR–Cas adaptive immunity to discriminate plasmids and phages"
+Smith et al., 2020, Nature Microbiology: "The Rcs stress response inversely controls surface and CRISPR–Cas adaptive immunity to discriminate plasmids and phages"
 Leah M. Smith, Simon A. Jackson, Lucia M. Malone, James E. Ussher, Paul P. Gardner and Peter C. Fineran*
 
-Data analysis scripts and example dataset from Smith et al., unpublished: "SorTn-seq: a functional genomics approach to discover regulators of bacterial gene expression"
+Smith et al., unpublished: "SorTn-seq: a functional genomics approach to discover regulators of bacterial gene expression"
 Leah M. Smith, Simon A. Jackson, Paul P. Gardner and Peter C. Fineran*
-
 
 ## SorTn-seq overview
 
+SorTn-seq uses fluorescent reporters, saturation transposon mutagenesis and fluorescence activated cell sorting (FACS) to isolate bacterial mutants with altered gene expression. Sorted cell pools are deep sequenced to identify transposon insertion sites and the enrichment of mutants in high or low fluorescence bins is used to identify putative regulators of gene expression.
 
+*This repository contains:*
 
-
-
-
-
-
+The data analysis scripts from Smith et al., 2020, Nature Microbiology: SorTn-seq/Nature_Microbiology/
 
 
 ### Data analysis overview
