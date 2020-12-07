@@ -53,7 +53,7 @@ done
 **SorTnSeq_format_features.R: Generates a list of genome features and add intergenic regions.**\
 \
 Requires:
-- The RefSeq .gff file corresponding to the genome assembly used above: [genome.prefix_genomic.gff]
+- The RefSeq .gff file corresponding to the genome assembly used above: [genome.prefix]_genomic.gff
 - Update the "genome.prefix" variable
 Outputs: 
 - [genome.prefix]_features_sortnseq.xlsx
