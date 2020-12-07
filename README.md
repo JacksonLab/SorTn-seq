@@ -28,7 +28,7 @@ Figure 9. Summary of input and output files of the SorTn-seq analysis. FASTQ fil
 ## Data analysis
 
 **Process raw data:**
-Requires the RefSeq nucleotide fasta file ([genome.prefix]_genomic.fna)
+Requires the RefSeq nucleotide fasta file for the bacterial genome: [genome.prefix]_genomic.fna
 
 ```bash
 # Quality control of raw sequencing data
@@ -48,11 +48,38 @@ done
 
 ```
 
-**Generate a list of genome features and add intergenic regions.**
-Requires the RefSeq .gff file () corresponding to the genome assembly used above.
+**SorTnSeq_format_features.R: Generates a list of genome features and add intergenic regions.**
+Requires:
+- The RefSeq .gff file corresponding to the genome assembly used above: [genome.prefix_genomic.gff]
+- Update the "genome.prefix" variable
+Outputs: 
+- [genome.prefix]_features_sortnseq.xlsx
 
+**SorTnSeq_insertion_counts.R: Matches Tn insertion sites to genome features and generates a counts table for later analyses**
+Requires:
+- [genome.prefix]_features_sortnseq.xlsx
+- sample_metadata.xlsx
+- The .bed files generate above, placed in bed/
+- Update the [genome.prefix], [trim.3.prime] and [trim.5.prime] variables
 
+Outputs:
+- SorTnSeq_table_reads.xlsx: summarizes the number of reads per feature for each library.
+- SorTnSeq_table_insertion_index.xlsx: summarizes the insertion index (number of insertions / feature length) per feature for each library.
+- SorTnSeq_table_unique_insertions.xlsx: summarizes the number of unique transposon insertions per feature for each library.
+- SorTnSeq_all_features_by_sample.xlsx: summarizes the number of reads, unique insertions, and insertions index per feature for each library.
 
+**SorTnSeq_analysis.R: Regulator prediction.**
+Requires:
+- [genome.prefix]_features_sortnseq.xlsx
+- SorTnSeq_table_unique_insertions.xlsx
+- SorTnSeq_table_insertion_index.xlsx
+- Update the [bcv.features], [read.cutoff.depleted], [reference.sample], [threshold.fc] and [threshold.p.adj] variables
+
+Outputs:
+- SorTnSeq_bcv_plot.pdf: multidimensional scaling plot (MDS) to visualize the similarity between libraries and replicates based upon the biological coefficient of variation 
+- SorTnSeq_enrichment_depleted.pdf: summarizes the enriched features in the high and low bins, at the specified cut-offs values. In R, this plot is interactive, and hovering above each point displays the feature name.
+- Volcano plots for each sample library compared to the reference
+- SorTnSeq_results_depleted_unique_insertions.xlsx: results of the differential enrichment analysis.
 
 ## Dependencies:
 
