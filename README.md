@@ -86,6 +86,12 @@ Outputs:
 - Volcano plots for each sample library compared to the reference
 - SorTnSeq_results_depleted_unique_insertions.xlsx: results of the differential enrichment analysis.
 
+## Example dataset
+
+example_dataset/ contains an example dataset for SorTn-seq on the type III-A CRISPR-Cas *csm* promoter in *Serratia* ATCC 39006.
+The [genome.prefix] should be set to "GCF_002847015.1_ASM284701v1".
+The .bed files need to be unzipped before running SorTnSeq_insertion_counts.R.
+
 ## Dependencies:
 
 - **FastQC**\
