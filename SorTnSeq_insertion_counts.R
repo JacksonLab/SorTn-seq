@@ -3,7 +3,7 @@ library(readxl)
 library(writexl)
 
 # variables
-  genome.prefix<-"GCF_002847015.1_ASM284701v1"
+  genome.prefix<-"GCF_002847015.1_ASM284701v1" # Please update for your target genome
   trim.3.prime<-0.1 # Proportion of the 3' end of features (non-intergenic) to exclude for read counting
   trim.5.prime<-0.1 # Proportion of the 5' end of features (non-intergenic) to exclude for read counting
 
