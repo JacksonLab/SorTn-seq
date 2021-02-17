@@ -61,9 +61,28 @@ done
 ### SorTnSeq_insertion_counts.R: Matches Tn insertion sites to genome features and generates a counts table for later analyses.
 **Requires:**
 - [genome.prefix]_features_sortnseq.xlsx
-- sample_metadata.xlsx (see example in /example_dataset/)
+- sample_metadata.xlsx (see example in /example_dataset/ and below)
 - The .bed files generate above, placed in bam/
 - Update the [genome.prefix], [trim.3.prime] and [trim.5.prime] variables
+
+Example sample_metadata table:
+
+| plot.file.prefix | sample.type* | replicate |
+| :---         |     :---:      |          ---: |
+| C7P4T-3658-01-0-1_S1_L001_R1_001_prinseq_good	| low	| 1
+| C7P4T-3658-02-0-1_S2_L001_R1_001_prinseq_good	| high	| 1
+| C7P4T-3658-03-0-1_S3_L001_R1_001_prinseq_good	| depleted	| 1
+| C7P4T-3658-04-0-1_S4_L001_R1_001_prinseq_good	| low	| 2
+| C7P4T-3658-05-0-1_S5_L001_R1_001_prinseq_good	| high	| 2
+| C7P4T-3658-06-0-1_S6_L001_R1_001_prinseq_good	| depleted	| 2
+| C7P4T-3658-07-0-1_S7_L001_R1_001_prinseq_good	| low	| 3
+| C7P4T-3658-08-0-1_S8_L001_R1_001_prinseq_good	| high	| 3
+| C7P4T-3658-09-0-1_S9_L001_R1_001_prinseq_good	| depleted	| 3
+| C7P4T-3658-10-0-1_S10_L001_R1_001_prinseq_good	| input	| 1
+| C7P4T-3658-11-0-1_S11_L001_R1_001_prinseq_good	| input	| 2
+| C7P4T-3658-12-0-1_S12_L001_R1_001_prinseq_good	| input	| 3
+
+*sample.type must be one of: [input] [high] [low] [depleted]
 
 **Outputs:**
 - SorTnSeq_table_reads.xlsx: summarizes the number of reads per feature for each library.
