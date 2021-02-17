@@ -61,7 +61,7 @@ done
 ### SorTnSeq_insertion_counts.R: Matches Tn insertion sites to genome features and generates a counts table for later analyses.
 **Requires:**
 - [genome.prefix]_features_sortnseq.xlsx
-- sample_metadata.xlsx
+- sample_metadata.xlsx (see example in /example_dataset/)
 - The .bed files generate above, placed in bam/
 - Update the [genome.prefix], [trim.3.prime] and [trim.5.prime] variables
 
