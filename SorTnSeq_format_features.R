@@ -2,9 +2,10 @@ library(tidyverse)
 library(readxl)
 library(writexl)
 
-generate_feature_table<-function(file.prefix){
+file.prefix<-"GCF_002847015.1_ASM284701v1"  # Please update for your target genome
 
-# file.prefix<-"GCF_002847015.1_ASM284701v1"  
+generate_feature_table<-function(file.prefix){
+  
 gff.refseq<-read_delim(paste0(file.prefix,"_genomic.gff"),delim="\t",comment="#",
                        col_names=c("seqid",
                                    "source",
@@ -173,7 +174,7 @@ features.in<-gff.refseq%>%
   features.sortnseq%>%write_xlsx(paste0(file.prefix,"_features_sortnseq.xlsx"))
 }
 
-generate_feature_table("GCF_002847015.1_ASM284701v1") # serratia
+generate_feature_table(file.prefix)
 
 
 
