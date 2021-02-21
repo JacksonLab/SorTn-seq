@@ -8,6 +8,8 @@ Leah M. Smith, Simon A. Jackson, Lucia M. Malone, James E. Ussher, Paul P. Gardn
 Smith et al., unpublished: "SorTn-seq: a functional genomics approach to discover regulators of bacterial gene expression"
 Leah M. Smith, Simon A. Jackson, Paul P. Gardner and Peter C. Fineran*
 
+[![DOI](https://zenodo.org/badge/232026406.svg)](https://zenodo.org/badge/latestdoi/232026406)
+
 ## SorTn-seq overview
 
 SorTn-seq uses fluorescent reporters, saturation transposon mutagenesis and fluorescence activated cell sorting (FACS) to isolate bacterial mutants with altered gene expression. Sorted cell pools are deep sequenced to identify transposon insertion sites and the enrichment of mutants in high or low fluorescence bins is used to identify putative regulators of gene expression.
