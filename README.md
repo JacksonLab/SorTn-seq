@@ -1,12 +1,10 @@
-# SorTn-seq: a functional genomics approach to discover regulators of bacterial gene expression
+# SorTn-seq: a high-throughput functional genomics approach to discovering regulators of bacterial gene expression
 
-## Citation
+## Citations
 
-Smith et al., 2020, Nature Microbiology: "The Rcs stress response inversely controls surface and CRISPR–Cas adaptive immunity to discriminate plasmids and phages"
-Leah M. Smith, Simon A. Jackson, Lucia M. Malone, James E. Ussher, Paul P. Gardner and Peter C. Fineran*
+> Leah M. Smith, Simon A. Jackson, Lucia M. Malone, James E. Ussher, Paul P. Gardner and Peter C. Fineran* (2021) The Rcs stress response inversely controls surface and CRISPR–Cas adaptive immunity to discriminate plasmids and phages. *Nature Microbiology*, **6**, 162–172. doi: [10.1038/s41564-020-00822-7](https://doi.org/10.1038/s41564-020-00822-7)
 
-Smith et al., unpublished: "SorTn-seq: a functional genomics approach to discover regulators of bacterial gene expression"
-Leah M. Smith, Simon A. Jackson, Paul P. Gardner and Peter C. Fineran*
+> Leah M. Smith, Simon A. Jackson, Paul P. Gardner and Peter C. Fineran* (2021) SorTn-seq: a high-throughput functional genomics approach to discovering regulators of bacterial gene expression. *Nature Protocols*, **16**, 4382–4418. doi: [10.1038/s41596-021-00582-6](https://doi.org/10.1038/s41596-021-00582-6)
 
 [![DOI](https://zenodo.org/badge/232026406.svg)](https://zenodo.org/badge/latestdoi/232026406)
 
@@ -16,9 +14,9 @@ SorTn-seq uses fluorescent reporters, saturation transposon mutagenesis and fluo
 
 **This repository contains:**
 
-1) The data analysis scripts from Smith et al., 2020, Nature Microbiology: SorTn-seq/Nature_Microbiology/
+1) The data analysis scripts from Smith et al., 2021, Nature Microbiology: SorTn-seq/Nature_Microbiology/
 
-2) Data analysis scripts and an example dataset from the subsequent Protcol paper: Smith et al., unpublished.
+2) Data analysis scripts and an example dataset from the subsequent Protcol paper: Smith et al., 2021, Nature Protcols: SorTn-seq/
 
 ### SorTn-seq data analysis overview:
 
