@@ -6,6 +6,8 @@
 
 > Leah M. Smith, Simon A. Jackson, Paul P. Gardner and Peter C. Fineran* (2021) SorTn-seq: a high-throughput functional genomics approach to discovering regulators of bacterial gene expression. *Nature Protocols*, **16**, 4382–4418. doi: [10.1038/s41596-021-00582-6](https://doi.org/10.1038/s41596-021-00582-6)
 
+### Archived versions
+
 [![DOI](https://zenodo.org/badge/232026406.svg)](https://zenodo.org/badge/latestdoi/232026406)
 
 ## SorTn-seq overview
